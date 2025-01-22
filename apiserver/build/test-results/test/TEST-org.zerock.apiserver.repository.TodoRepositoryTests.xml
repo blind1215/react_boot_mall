@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.zerock.apiserver.repository.TodoRepositoryTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-01-22T12:12:22" hostname="DOGALAXY" time="1.645">
+  <properties/>
+  <testcase name="testPaging()" classname="org.zerock.apiserver.repository.TodoRepositoryTests" time="1.645"/>
+  <system-out><![CDATA[21:12:14.825 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.zerock.apiserver.repository.TodoRepositoryTests]: TodoRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:12:14.997 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.zerock.apiserver.ApiserverApplication for test class org.zerock.apiserver.repository.TodoRepositoryTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.5)
+
+2025-01-22T21:12:15.682+09:00  INFO 14592 --- [    Test worker] o.z.a.repository.TodoRepositoryTests     : Starting TodoRepositoryTests using Java 17.0.12 with PID 14592 (started by blind in D:\dev_backend\apiserver)
+2025-01-22T21:12:15.684+09:00  INFO 14592 --- [    Test worker] o.z.a.repository.TodoRepositoryTests     : No active profile set, falling back to 1 default profile: "default"
+2025-01-22T21:12:16.712+09:00  INFO 14592 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-22T21:12:16.837+09:00  INFO 14592 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 1 JPA repository interfaces.
+2025-01-22T21:12:17.671+09:00  INFO 14592 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-22T21:12:17.812+09:00  INFO 14592 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2025-01-22T21:12:17.816+09:00  INFO 14592 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2025-01-22T21:12:18.489+09:00  INFO 14592 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-22T21:12:18.557+09:00  INFO 14592 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-22T21:12:18.791+09:00  INFO 14592 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@352f6727
+2025-01-22T21:12:18.794+09:00  INFO 14592 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-22T21:12:18.985+09:00 DEBUG 14592 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@7ed7ae) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@53ba1175)
+2025-01-22T21:12:18.986+09:00 DEBUG 14592 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@cd5ff55) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6003220a)
+2025-01-22T21:12:18.986+09:00 DEBUG 14592 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@16b64a03) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1584c019)
+2025-01-22T21:12:18.987+09:00 DEBUG 14592 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3688baab) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4fe2dd02)
+2025-01-22T21:12:18.987+09:00 DEBUG 14592 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6ba060af) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5817f1ca)
+2025-01-22T21:12:18.987+09:00 DEBUG 14592 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2b395581) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@726a8729)
+2025-01-22T21:12:18.987+09:00 DEBUG 14592 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1a2724d3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7dd91ffc)
+2025-01-22T21:12:18.987+09:00 DEBUG 14592 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1c2dd89b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3ad847f8)
+2025-01-22T21:12:18.988+09:00 DEBUG 14592 --- [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@19faedcc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@2c6927f0)
+2025-01-22T21:12:20.367+09:00  INFO 14592 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-22T21:12:20.448+09:00  INFO 14592 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-22T21:12:20.744+09:00  WARN 14592 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-22T21:12:22.509+09:00  INFO 14592 --- [    Test worker] o.z.a.repository.TodoRepositoryTests     : Started TodoRepositoryTests in 7.189 seconds (process running for 9.186)
+2025-01-22T21:12:24.116+09:00 DEBUG 14592 --- [    Test worker] org.hibernate.SQL                        : 
+    /* <criteria> */ ?[34mselect?[0m
+        t1_0.tno,
+        t1_0.completed,
+        t1_0.content,
+        t1_0.due_date,
+        t1_0.title 
+    ?[34mfrom?[0m
+        tbl_todo t1_0 
+    ?[34morder?[0m ?[34mby?[0m
+        t1_0.tno desc 
+    limit
+        ?,?
+2025-01-22T21:12:24.171+09:00 DEBUG 14592 --- [    Test worker] org.hibernate.SQL                        : 
+    /* <criteria> */ ?[34mselect?[0m
+        count(t1_0.tno) 
+    ?[34mfrom?[0m
+        tbl_todo t1_0
+2025-01-22T21:12:24.184+09:00  INFO 14592 --- [    Test worker] o.z.a.repository.TodoRepositoryTests     : 101
+2025-01-22T21:12:24.202+09:00  INFO 14592 --- [    Test worker] o.z.a.repository.TodoRepositoryTests     : [Todo(tno=101, title=Title..99, content=Content....99, completed=false, dueDate=2023-12-30), Todo(tno=100, title=Title..98, content=Content....98, completed=false, dueDate=2023-12-30), Todo(tno=99, title=Title..97, content=Content....97, completed=false, dueDate=2023-12-30), Todo(tno=98, title=Title..96, content=Content....96, completed=false, dueDate=2023-12-30), Todo(tno=97, title=Title..95, content=Content....95, completed=false, dueDate=2023-12-30), Todo(tno=96, title=Title..94, content=Content....94, completed=false, dueDate=2023-12-30), Todo(tno=95, title=Title..93, content=Content....93, completed=false, dueDate=2023-12-30), Todo(tno=94, title=Title..92, content=Content....92, completed=false, dueDate=2023-12-30), Todo(tno=93, title=Title..91, content=Content....91, completed=false, dueDate=2023-12-30), Todo(tno=92, title=Title..90, content=Content....90, completed=false, dueDate=2023-12-30)]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
